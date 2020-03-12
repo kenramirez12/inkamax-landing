@@ -10,7 +10,7 @@
     "images": "gulp images",
     "sitemap": "gulp sitemap"
   },
-  "author": "Alvaro Felipe",
+  "author": "Ken Ramirez",
   "license": "GPL-2.0",
   "devDependencies": {
     "babel-core": "^6.26.3",

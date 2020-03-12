@@ -1,0 +1,19 @@
+.main-menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  &__item:not(:first-child) {
+    margin-left: 4rem;
+  }
+
+  &__link {
+    font-family: 'HeadingFont';
+    color: #000;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

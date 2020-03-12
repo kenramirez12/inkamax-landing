@@ -5,4 +5,121 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  include ../includes/main-menu
+  .main-hero
+    .main-hero__left
+      img.main-hero__botella.mb-4(src="assets/img/botella_optimizada.png", alt="")
+      a.btn.btn-primary.px-5(href="#") Compra ahora
+    .main-hero__right
+      .main-hero__video-poster
+        img.main-hero__play-btn(src="assets/img/play-btn.svg", alt="")
+        img.main-hero__poster(src="assets/img/poster-video.jpg", alt="")
+  
+  .recetas-section
+    img.sabila-01(src="assets/img/sabila-shape.png", alt="")
+    .container.mt-5.pt-5
+      .row.mb-5
+        .col-12
+          h2.heading-font.text-center.position-relative.
+            Descubre Nuestras Recetas
+            <img src="assets/img/title-02.svg" style="transform: translate(-1.5rem, 10px)">
+      .row.mb-5.pb-5
+        each item in [1,2,3]
+          .col-md-4
+            .receta-item
+              h4.receta-item__title Limonada de Menta con Sábila
+              img.receta-item__image(src="assets/img/receta.jpg", alt="")
+
+  .premium-section
+    img.sabila-02(src="assets/img/sabila-shape.png", alt="")
+    .container.mt-5.pt-5
+      .row.mb-4
+        .col-12
+          h2.heading-font.text-center.position-relative.
+            Premium series
+            <img src="assets/img/title-01.svg">
+      .row
+        each item in [1,2,3,4]
+          .col-md-3
+            .product-item
+              h4.product-item__title Bebida de sábila
+              img.product-item__image(src="assets/img/product.jpg", alt="")
+      .row.mt-4.mb-5.pb-5
+        a.btn.btn-primary.mx-auto.px-5(href="#") Ver receta
+
+  .tomalo-section
+    img.sabila-03(src="assets/img/sabila-shape.png", alt="")
+    .container
+      .row
+        .col-md-6.position-relative
+          img.botella-sola-resource(src="assets/img/botella-sola.png", alt="")
+        .col-md-6.posiiton-relative
+          h2.heading-font.text-center.text-primary.mb-4 ¡Tomalo helado!
+          p.font-weight-bold.text-center.px-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          img.vaso-resource(src="assets/img/vaso.jpg", alt="")
+  .main-bg(style="margin-bottom:275px")
+    img.main-bg-top(src="assets/img/main_bg_top.svg" style="width:100%" alt="")
+    .container.main-bg__container.mb-5.pb-5
+      .row.mb-3
+        .col-12
+          h2.h1.heading-font.text-center.text-white Puntos de distribución
+      .row.align-items-center
+        .col-md-5
+          each n in [1, 2, 3]
+            .card.rounded.shadow.p-3.my-4
+              .location-content
+                .location-content__image
+                  img(src="assets/img/location.jpg", alt="")
+                p.location-content__description Lucky Supermarket: Jr. Paruro 787<br>Barrio Chino-Lima<br>428-3326.
+        .col-md-2.px-0
+          img.w-100(src="assets/img/botella-flechas.png", alt="")
+        .col-md-5
+          each n in [1, 2, 3]
+            .card.rounded.shadow.p-3.my-4
+              .location-content
+                .location-content__image
+                  img(src="assets/img/location.jpg", alt="")
+                p.location-content__description Lucky Supermarket: Jr. Paruro 787<br>Barrio Chino-Lima<br>428-3326.
+
+    .container.footer-container
+      img.footer-car(src="assets/img/car-footer.png", alt="")
+      img.footer-bg(src="assets/img/footer-bg.svg", alt="")
+      .footer-content
+        .row.justify-content-center
+          .col-md-10.mb-4
+            h2.heading-font.text-center Contáctanos
+          .col-md-8.mb-3
+            h4.heading-font ¡Visítanos!
+        .row.justify-content-center
+          .col-md-4
+            ul.list-unstyled
+              li.list-unstyled-item.mb-4 <img src="assets/img/map-icon.svg" width="20" class="mr-2"> lorem ipsum dolor sit amet, consctetur adipisincg elit.
+              li.list-unstyled-item.mb-4: a.text-dark(href="#") <img src="assets/img/phone-icon.svg" width="20" class="mr-2"> (0987) 200 579
+              li.list-unstyled-item.mb-4: a.text-dark(href="#") <img src="assets/img/email-icon.svg" width="20" class="mr-2"> sabilainkamax@gmail.com
+            h5.heading-font.mt-4 ¡Síguenos!
+            .d-flex
+              a.mr-2(href="#"): img(src="assets/img/fb-icon.svg", alt="" width="40")
+              a(href="#"): img(src="assets/img/yt-icon.svg", alt="" width="40")
+          .col-md-4
+            form(action="#")
+              .row
+                .col-12.mb-3
+                  input.form-control(type="text" placeholder="Nombre completo:")
+                .col-12.mb-3
+                  input.form-control(type="text" placeholder="Correo:")
+                .col-md-6.mb-3
+                  input.form-control(type="text" placeholder="Celular:")
+                .col-md-6.mb-3
+                  input.form-control(type="text" placeholder="Servicio:")
+                .col-12.mb-3
+                  textarea.form-control(placeholder="Mensaje:")
+                <div class="form-group col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      <small> Acepto los términos y condiciones</small>
+                    </label>
+                  </div>
+                </div>
+                .col-12
+                  <button type="submit" class="btn btn-light">Enviar información</button>
+    img.main-bg-bottom(src="assets/img/main_bg_bottom.svg" style="width:100%" alt="")

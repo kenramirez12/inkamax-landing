@@ -1,5 +1,5 @@
 // Vendors
-// @import "vendors/bootstrap/bootstrap.scss";
+@import "vendors/bootstrap/bootstrap.scss";
 // @import "vendors/slick/slick.scss";
 // @import "vendors/slick/slick-theme.scss";
 // @import "vendors/fontawesome/all.min.scss";
@@ -19,6 +19,10 @@
 // MODULOS
 @import "components/buttons";
 @import "components/menus";
+@import "components/hero";
+@import "components/products";
+@import "components/recetas";
+@import "components/locations";
 
 // Theme (colors and fonts)
 @import "theme/typography";
@@ -27,3 +31,56 @@
   // Todos los hacks que hayas necesitado para solucionar conflictos
   // o resolver situaciones extremas. Se espera poder mejorarlos luego.
 @import "hacks/hacks";
+
+#page {
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+.main-bg {
+  position: relative;
+  margin-top: 38rem;
+}
+
+.main-bg__container {
+  margin-top: -7rem;
+}
+
+.vaso-resource {
+  position: absolute;
+  left: -15%;
+}
+
+.botella-sola-resource {
+  width: 100%;
+  max-width: 520px;
+  z-index: 9;
+  position: absolute;
+  top: -4rem;
+}
+
+.recetas-section,
+.premium-section,
+.tomalo-section {
+  position: relative;
+}
+
+.sabila-01 {
+  position: absolute;
+  left: -14rem;
+  top: -12rem;
+}
+
+.sabila-02 {
+  position: absolute;
+  transform: rotate(170deg);
+  right: -10rem;
+}
+
+.sabila-03 {
+  position: absolute;
+  right: auto;
+  left: -18rem;
+  top: -20rem;
+  transform: rotate(-60deg);
+}

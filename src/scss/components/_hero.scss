@@ -1,0 +1,53 @@
+.main-hero {
+  display: flex;
+
+  &__left {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__botella {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  &__right {
+    width: 58%;
+  }
+
+  &__video-poster {
+    height: 620px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      .main-hero__play-btn {
+        // transform: scale(1.1);
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+        height: 100px;
+      }
+    }
+  }
+  
+  &__poster {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 0.3s;
+    height: 90px;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,25 @@
+.footer-container {
+  position: relative;
+  margin-bottom: -200px;
+}
+
+.footer-bg {
+  width: 100%;
+}
+
+.footer-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-car {
+  z-index: 1;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.main-bg {
+  background: linear-gradient(to right, #8ad73d 6%, #d1ed5c 47%, #8ad73d 87%);
+}
